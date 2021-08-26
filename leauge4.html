@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+  <title>The Federation</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.css" type="text/css" rel="stylesheet" media="screen,projection" />
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection" />
+
+  <script type="text/javascript">
+    var team1 = 'Jurd and HNDRNCE';
+    var team2 = 'willy-wonka and Nalin';
+    var team3 = 'Gaskin Bros and Jack2Slappy';
+    var team4 = 'RedDog90 and PeterMcc';
+
+//Team 1
+    var Match1_team1_points =0;
+    var Match1_team1_kills =0;
+
+    var Match3_team1_points =0;
+    var Match3_team1_kills =0;
+
+    var Match5_team1_points =0;
+    var Match5_team1_kills =0;
+
+//Team 2
+    var Match1_team2_points =0;
+    var Match1_team2_kills =0;
+
+    var Match4_team2_points =0;
+    var Match4_team2_kills =0;
+
+    var Match6_team2_points =0;
+    var Match6_team2_kills =0;
+
+//Team 3
+    var Match2_team3_points =0;
+    var Match2_team3_kills =0;
+
+    var Match4_team3_points =0;
+    var Match4_team3_kills =0;
+
+    var Match5_team3_points =0;
+    var Match5_team3_kills =0;
+
+//Team 4
+    var Match2_team4_points = 0;
+    var Match2_team4_kills = 0;
+
+    var Match3_team4_points =0;
+    var Match3_team4_kills =0;
+
+    var Match6_team4_points =0;
+    var Match6_team4_kills =0;
+
+
+    var team1_total_points = Match1_team1_points+Match3_team1_points+Match5_team1_points;
+    var team2_total_points = Match1_team2_points+Match4_team2_points+Match6_team2_points;
+    var team3_total_points = Match2_team3_points+Match4_team3_points+Match5_team3_points;
+    var team4_total_points = Match2_team4_points+Match3_team4_points+Match6_team4_points;
+
+    var team1_total_kills = Match1_team1_kills + Match3_team1_kills + Match5_team1_kills;
+    var team2_total_kills = Match1_team2_kills + Match4_team2_kills + Match6_team2_kills;
+    var team3_total_kills = Match2_team3_kills + Match4_team3_kills + Match5_team3_kills;
+    var team4_total_kills = Match2_team4_kills + Match3_team4_kills + Match6_team4_kills;
+  </script>
+</head>
+
+<body>
+
+  <!-- Web nav bar -->
+  <nav class="fed-red" role="navigation">
+    <div class="nav-wrapper container"><a id="logo-container" href="index.html" class="brand-logo">The Federation</a>
+      <ul class="right hide-on-med-and-down">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="leauge1.html">Leauge 1</a></li>
+        <li><a href="leauge2.html">Leauge 2</a></li>
+        <li><a href="leauge3.html">Leauge 3</a></li>
+        <li><a href="leauge4.html">Leauge 4</a></li>
+      </ul>
+      </ul>
+
+      <!-- Mobile nav bar -->
+      <ul id="nav-mobile" class="sidenav">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="leauge1.html">Leauge 1</a></li>
+        <li><a href="leauge2.html">Leauge 2</a></li>
+        <li><a href="leauge3.html">Leauge 3</a></li>
+        <li><a href="leauge4.html">Leauge 4</a></li>
+      </ul>
+      </ul>
+      <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+
+  <!-- Leauge 1 Headline -->
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <h2 class="header center black-text"> Leauge 4</h2>
+    </div>
+  </div>
+
+  <!-- scoreboard -->
+  <div class="container">
+    <div class="section">
+      <div class="container">
+        <div class="section">
+          <div class="customBox">
+
+            <table class="striped">
+              <thead>
+                <tr>
+                  <th>Team</th>
+                  <th>Points</th>
+                  <th>Kills</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr>
+                  <td>
+                    <script>
+                      document.write(team1)
+                    </script>
+                  </td>
+                  <td>
+                    <script>
+                      document.write(team1_total_points)
+                    </script>
+
+                  </td> <!-- Total Points -->
+                  <td>
+                    <script>
+                      document.write(team1_total_kills)
+                    </script>
+                  </td> <!-- Total Kills -->
+                </tr>
+                <tr>
+                  <td>
+                    <script>
+                      document.write(team2)
+                    </script>
+                  </td>
+                  <td>
+                    <script>
+                      document.write(team2_total_points)
+                    </script>
+                  </td> <!-- Total Points -->
+                  <td>
+                    <script>
+                      document.write(team2_total_kills)
+                    </script>
+                  </td> <!-- Total Kills -->
+                </tr>
+                <tr>
+                  <td>
+                    <script>
+                      document.write(team3)
+                    </script>
+                  </td>
+                  <td>
+                    <script>
+                      document.write(team3_total_points)
+                    </script>
+                    </p>
+                  </td> <!-- Total Points -->
+                  <td>
+                    <script>
+                      document.write(team3_total_kills)
+                    </script>
+                  </td> <!-- Total Kills -->
+                </tr>
+                <tr>
+                  <td>
+                    <script>
+                      document.write(team4)
+                    </script>
+                  </td>
+                  <td>
+                    <script>
+                      document.write(team4_total_points)
+                    </script>
+                    </p>
+                  </td> <!-- Total Points -->
+                  <td>
+                    <script>
+                      document.write(team4_total_kills)
+                    </script>
+                  </td> <!-- Total Kills -->
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Round 1 header -->
+  <div class="row center">
+    <h3 class="header col s12 ">Round 1</h3>
+  </div>
+
+  <!-- Match details round 1 -->
+  <div class="container">
+    <div class="section">
+      <div class="row">
+
+        <!--   Match 1   -->
+        <div class="col s12 m6">
+          <h5 class="center">Match 1</h5>
+            <div class="section">
+              <div class="customBox">
+                <table class="striped highlight">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Host</th>
+                      <th>Joining</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <th>Team</th>
+                      <td>
+                        <script>
+                          document.write(team1)
+                        </script>
+                      </td>
+                      <td>
+                        <script>
+                          document.write(team2)
+                        </script>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Points</th>
+                      <td>
+                        <script>
+                          document.write(Match1_team1_points)
+                        </script>
+                        </p>
+                      </td>
+                      <td>
+                        <script>
+                          document.write(Match1_team2_points)
+                        </script>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Kills</th>
+                      <td>
+                        <script>
+                          document.write(Match1_team1_kills)
+                        </script>
+                        </p>
+                      </td>
+                      <td>
+                        <script>
+                          document.write(Match1_team2_kills)
+                        </script>
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br>
+              </div>
+            </div>
+          </div>
+
+        <!--   Match 2   -->
+        <div class="col s12 m6">
+          <h5 class="center">Match 2</h5>
+
+            <div class="section">
+              <div class="customBox">
+                <table class="striped highlight">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Host</th>
+                      <th>Joining</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <th>Team</th>
+                      <td>
+                        <script>
+                          document.write(team4)
+                        </script>
+                      </td>
+                      <td>
+                        <script>
+                          document.write(team3)
+                        </script>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Points</th>
+                      <td>
+                        <script>
+                          document.write(Match2_team4_points)
+                        </script>
+                        </p>
+                      </td>
+                      <td>
+                        <script>
+                          document.write(Match2_team3_points)
+                        </script>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Kills</th>
+                      <td>
+                        <script>
+                          document.write(Match2_team4_kills)
+                        </script>
+                        </p>
+                      </td>
+                      <td>
+                        <script>
+                          document.write(Match2_team3_kills)
+                        </script>
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Round 2 header -->
+  <div class="row center">
+    <h3 class="header col s12 ">Round 2</h3>
+  </div>
+
+  <!-- Match details round 2 -->
+  <div class="container">
+    <div class="section">
+      <div class="row">
+
+        <!--   Match 3   -->
+        <div class="col s12 m6">
+          <h5 class="center">Match 3</h5>
+
+            <div class="section">
+              <div class="customBox">
+                <table class="striped highlight">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Host</th>
+                      <th>Joining</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <th>Team</th>
+                      <td>
+                        <script>
+                          document.write(team1)
+                        </script>
+                      </td>
+                      <td>
+                        <script>
+                          document.write(team4)
+                        </script>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Points</th>
+                      <td>
+                        <script>
+                          document.write(Match3_team1_points)
+                        </script>
+                        </p>
+                      </td>
+                      <td>
+                        <script>
+                          document.write(Match3_team4_points)
+                        </script>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Kills</th>
+                      <td>
+                        <script>
+                          document.write(Match3_team1_kills)
+                        </script>
+                        </p>
+                      </td>
+                      <td>
+                        <script>
+                          document.write(Match3_team4_kills)
+                        </script>
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br>
+              </div>
+            </div>
+          </div>
+
+        <!--   Match 4   -->
+        <div class="col s12 m6">
+          <h5 class="center">Match 4</h5>
+
+            <div class="section">
+              <div class="customBox">
+                <table class="striped highlight">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Host</th>
+                      <th>Joining</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <th>Team</th>
+                      <td>
+                        <script>
+                          document.write(team2)
+                        </script>
+                      </td>
+                      <td>
+                        <script>
+                          document.write(team3)
+                        </script>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Points</th>
+                      <td>
+                        <script>
+                          document.write(Match4_team2_points)
+                        </script>
+                        </p>
+                      </td>
+                      <td>
+                        <script>
+                          document.write(Match4_team3_points)
+                        </script>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Kills</th>
+                      <td>
+                        <script>
+                          document.write(Match4_team2_kills)
+                        </script>
+                        </p>
+                      </td>
+                      <td>
+                        <script>
+                          document.write(Match4_team3_kills)
+                        </script>
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!-- Round 3 header -->
+  <div class="row center">
+    <h3 class="header col s12 ">Round 3</h3>
+  </div>
+
+  <!-- Match details round 3 -->
+  <div class="container">
+    <div class="section">
+      <div class="row">
+
+        <!--   Match 5   -->
+        <div class="col s12 m6">
+          <h5 class="center">Match 5</h5>
+
+            <div class="section">
+              <div class="customBox">
+                <table class="striped highlight">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Host</th>
+                      <th>Joining</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <th>Team</th>
+                      <td>
+                        <script>
+                          document.write(team3)
+                        </script>
+                      </td>
+                      <td>
+                        <script>
+                          document.write(team1)
+                        </script>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Points</th>
+                      <td>
+                        <script>
+                          document.write(Match5_team3_points)
+                        </script>
+                        </p>
+                      </td>
+                      <td>
+                        <script>
+                          document.write(Match5_team1_points)
+                        </script>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Kills</th>
+                      <td>
+                        <script>
+                          document.write(Match5_team3_kills)
+                        </script>
+                        </p>
+                      </td>
+                      <td>
+                        <script>
+                          document.write(Match5_team1_kills)
+                        </script>
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br>
+              </div>
+            </div>
+          </div>
+
+        <!--   Match 6   -->
+        <div class="col s12 m6">
+          <h5 class="center">Match 6</h5>
+
+            <div class="section">
+              <div class="customBox">
+                <table class="striped highlight">
+                  <thead>
+                    <tr>
+                      <th></th>
+                      <th>Host</th>
+                      <th>Joining</th>
+                    </tr>
+                  </thead>
+
+                  <tbody>
+                    <tr>
+                      <th>Team</th>
+                      <td>
+                        <script>
+                          document.write(team2)
+                        </script>
+                      </td>
+                      <td>
+                        <script>
+                          document.write(team4)
+                        </script>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Points</th>
+                      <td>
+                        <script>
+                          document.write(Match6_team2_points)
+                        </script>
+                        </p>
+                      </td>
+                      <td>
+                        <script>
+                          document.write(Match6_team4_points)
+                        </script>
+                        </p>
+                      </td>
+                    </tr>
+                    <tr>
+                      <th>Kills</th>
+                      <td>
+                        <script>
+                          document.write(Match6_team2_kills)
+                        </script>
+                        </p>
+                      </td>
+                      <td>
+                        <script>
+                          document.write(Match6_team4_kills)
+                        </script>
+                        </p>
+                      </td>
+                    </tr>
+                  </tbody>
+                </table>
+                <br>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  <!--  Scripts-->
+  <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
+  <script src="js/materialize.js"></script>
+  <script src="js/init.js"></script>
+
+</body>
+</html>

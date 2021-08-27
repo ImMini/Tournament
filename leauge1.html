@@ -2,6 +2,7 @@
 <html lang="en">
 
 <head>
+  <meta http-equiv="refresh" content="5s">
   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
   <title>The Federation</title>
@@ -64,10 +65,32 @@
     var team1_total_kills = Match1_team1_kills + Match2_team1_kills + Match5_team1_kills + Match6_team1_kills;
     var team2_total_kills = Match1_team2_kills + Match2_team2_kills + Match3_team2_kills + Match4_team2_kills;
     var team3_total_kills = Match3_team3_kills + Match4_team3_kills + Match5_team3_kills + Match6_team3_kills;
+
+    function lastModified() {
+        var modiDate = new Date(document.lastModified);
+        var showAs = modiDate.getDate() + "-" + (modiDate.getMonth() + 1) + "-" + modiDate.getFullYear();
+        return showAs
+    }
+
+    function GetTime() {
+        var modiDate = new Date();
+        var Seconds
+
+        if (modiDate.getSeconds() < 10) {
+            Seconds = "0" + modiDate.getSeconds();
+        } else {
+            Seconds = modiDate.getSeconds();
+        }
+
+        var modiDate = new Date();
+        var CurTime = modiDate.getHours() + ":" + modiDate.getMinutes() + ":" + Seconds
+        return CurTime
+    }
+
   </script>
 </head>
 
-<body>
+<body onload="myFunction()">
 
   <!-- Web nav bar -->
   <nav class="fed-red" role="navigation">
@@ -98,6 +121,23 @@
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
       <h2 class="header center black-text"> Leauge 1</h2>
+      <p class="center">  <script type="text/javascript"> document.write("Last updated: " + document.lastModified);</script></p>
+      <p class="center"><script type="text/javascript">
+      document.write("Last updated on ")
+      document.write(lastModified() + " @ " + GetTime());
+      document.write(" [D M Y 24 Hour Clock]")
+      document.write("");
+      </script>
+</p>
+
+This is last updated time <span id="demo"></span>
+
+<script>
+  function myFunction() {
+    var x = document.lastModified;
+    document.getElementById("demo").innerHTML = x;
+  }
+</script>
     </div>
   </div>
 
@@ -643,13 +683,14 @@
               <br>
             </div>
           </div>
-              </div>
+        </div>
 
 
     <!--  Scripts-->
     <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
     <script src="js/materialize.js"></script>
     <script src="js/init.js"></script>
+    <script type="text/javascript" src="js/time_stamp.js"></script>
 
 </body>
 

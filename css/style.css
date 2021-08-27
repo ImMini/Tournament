@@ -42,21 +42,3 @@ img{
 td, th {
     vertical-align: top;
   }
-
-hr {
-  margin-left: 10%;
-  margin-right: 10%
-}
-
-@font-face {
-    font-family: 'Roboto';
-    src: url('Roboto-ThinItalic-webfont.eot');
-    src: url('Roboto-ThinItalic-webfont.eot?#iefix') format('embedded-opentype'),
-         url('Roboto-ThinItalic-webfont.woff') format('woff'),
-         url('Roboto-ThinItalic-webfont.ttf') format('truetype'),
-         url('Roboto-ThinItalic-webfont.svg#RobotoThinItalic') format('svg'); (under the Apache Software License).
-    font-weight: 200;
-    font-style: italic;
-}
-
-.UX_FontClass, p, body {font-family: 'Roboto', Arial, Helevtica, sans-serif; }

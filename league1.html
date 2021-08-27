@@ -25,8 +25,8 @@
     var Match2_team1_points = 0;
     var Match2_team1_kills = 0;
 
-    var Match5_team1_points = 0;
-    var Match5_team1_kills = 0;
+    var Match4_team1_points = 0;
+    var Match4_team1_kills = 0;
 
     var Match6_team1_points = 0;
     var Match6_team1_kills = 0;
@@ -41,8 +41,8 @@
     var Match3_team2_points = 0;
     var Match3_team2_kills = 0;
 
-    var Match4_team2_points = 0;
-    var Match4_team2_kills = 0;
+    var Match5_team2_points = 0;
+    var Match5_team2_kills = 0;
 
     //Team 3
     var Match3_team3_points = 0;
@@ -58,12 +58,12 @@
     var Match6_team3_kills = 0;
 
 
-    var team1_total_points = Match1_team1_points + Match2_team1_points + Match5_team1_points + Match6_team1_points;
-    var team2_total_points = Match1_team2_points + Match2_team2_points + Match3_team2_points + Match4_team2_points;
+    var team1_total_points = Match1_team1_points + Match2_team1_points + Match4_team1_points + Match6_team1_points;
+    var team2_total_points = Match1_team2_points + Match2_team2_points + Match3_team2_points + Match5_team2_points;
     var team3_total_points = Match3_team3_points + Match4_team3_points + Match5_team3_points + Match6_team3_points;
 
-    var team1_total_kills = Match1_team1_kills + Match2_team1_kills + Match5_team1_kills + Match6_team1_kills;
-    var team2_total_kills = Match1_team2_kills + Match2_team2_kills + Match3_team2_kills + Match4_team2_kills;
+    var team1_total_kills = Match1_team1_kills + Match2_team1_kills + Match4_team1_kills + Match6_team1_kills;
+    var team2_total_kills = Match1_team2_kills + Match2_team2_kills + Match3_team2_kills + Match5_team2_kills;
     var team3_total_kills = Match3_team3_kills + Match4_team3_kills + Match5_team3_kills + Match6_team3_kills;
   </script>
 </head>
@@ -75,20 +75,19 @@
     <div class="nav-wrapper container"><a id="logo-container" href="#" class="brand-logo">The Federation</a>
       <ul class="right hide-on-med-and-down">
         <li><a href="index.html">Home</a></li>
-        <li><a href="League 1.html">League  1</a></li>
-        <li><a href="League 2.html">League  2</a></li>
-        <li><a href="League 3.html">League  3</a></li>
-        <li><a href="League 4.html">League  4</a></li>
-      </ul>
+        <li><a href="league1.html">League 1</a></li>
+        <li><a href="league2.html">League 2</a></li>
+        <li><a href="league3.html">League 3</a></li>
+        <li><a href="league4.html">League 4</a></li>
       </ul>
 
       <!-- Mobile nav bar -->
       <ul id="nav-mobile" class="sidenav">
         <li><a href="index.html">Home</a></li>
-        <li><a href="League 1.html">League  1</a></li>
-        <li><a href="League 2.html">League  2</a></li>
-        <li><a href="League 3.html">League  3</a></li>
-        <li><a href="League 4.html">League  4</a></li>
+        <li><a href="league1.html">League 1</a></li>
+        <li><a href="league2.html">League 2</a></li>
+        <li><a href="league3.html">League 3</a></li>
+        <li><a href="league4.html">League 4</a></li>
       </ul>
       </ul>
       <a href="#" data-target="nav-mobile" class="sidenav-trigger"><i class="material-icons">menu</i></a>
@@ -98,7 +97,7 @@
   <!-- League  1 Headline -->
   <div class="section no-pad-bot" id="index-banner">
     <div class="container">
-      <h2 class="header center black-text"> League  1</h2>
+      <h2 class="header center black-text"> League 1</h2>
       <p class="center">
         <script type="text/javascript">
           document.write("Last updated: " + document.lastModified);
@@ -203,10 +202,10 @@
     </div>
   </div>
 
-  <!-- Round 1 header -->
+  <!-- Round 1 header
   <div class="row center">
     <h3 class="header col s12 ">Round 1</h3>
-  </div>
+  </div>-->
 
 
 
@@ -357,12 +356,12 @@
           </div>
         </div>
 
-        <!-- Round 2 header -->
+        <!-- Round 2 header
         <div class="row center">
           <h3 class="header col s12 ">Round 2</h3>
-        </div>
-
-
+        </div>-->
+</div>
+<div class="row">
         <!--   Match 3   -->
         <div class="col s12 m6">
           <h5 class="center">Match 3<br> </h5>
@@ -438,84 +437,6 @@
           <h5 class="center">Match 4 <br> </h5>
           <h6 class="center">
             <script>
-              document.write(team1)
-            </script> - Waiting
-          </h6>
-          <div class="section">
-            <div class="customBox">
-              <table class="striped highlight">
-                <thead>
-                  <tr>
-                    <th></th>
-                    <th>Host</th>
-                    <th>Joining</th>
-                  </tr>
-                </thead>
-
-                <tbody>
-                  <tr>
-                    <th>Team</th>
-                    <td>
-                      <script>
-                        document.write(team2)
-                      </script>
-                    </td>
-                    <td>
-                      <script>
-                        document.write(team3)
-                      </script>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>Points</th>
-                    <td>
-                      <script>
-                        document.write(Match4_team2_points)
-                      </script>
-                      </p>
-                    </td>
-                    <td>
-                      <script>
-                        document.write(Match4_team3_points)
-                      </script>
-                      </p>
-                    </td>
-                  </tr>
-                  <tr>
-                    <th>Kills</th>
-                    <td>
-                      <script>
-                        document.write(Match4_team2_kills)
-                      </script>
-                      </p>
-                    </td>
-                    <td>
-                      <script>
-                        document.write(Match4_team3_kills)
-                      </script>
-                      </p>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-              <br>
-            </div>
-          </div>
-        </div>
-
-
-
-        <!-- Round 3 header -->
-
-        <div class="row center">
-          <h3 class="header col s12 ">Round 3</h3>
-        </div>
-
-        <!--   Match 5   -->
-        <div class="col s12 m6">
-          <h5 class="center">Match 5<br> </h5>
-          <h6 class="center">
-            <script>
               document.write(team2)
             </script> - Waiting
           </h6>
@@ -548,13 +469,13 @@
                     <th>Points</th>
                     <td>
                       <script>
-                        document.write(Match5_team3_points)
+                        document.write(Match4_team3_points)
                       </script>
                       </p>
                     </td>
                     <td>
                       <script>
-                        document.write(Match5_team1_points)
+                        document.write(Match4_team1_points)
                       </script>
                       </p>
                     </td>
@@ -563,13 +484,92 @@
                     <th>Kills</th>
                     <td>
                       <script>
-                        document.write(Match5_team3_kills)
+                        document.write(Match4_team3_kills)
                       </script>
                       </p>
                     </td>
                     <td>
                       <script>
-                        document.write(Match5_team1_kills)
+                        document.write(Match4_team1_kills)
+                      </script>
+                      </p>
+                    </td>
+                  </tr>
+                </tbody>
+              </table>
+              <br>
+            </div>
+          </div>
+        </div>
+
+      </div>
+      <div class="row">
+
+        <!-- Round 3 header
+
+        <div class="row center">
+          <h3 class="header col s12 ">Round 3</h3>
+        </div>-->
+
+        <!--   Match 5   -->
+        <div class="col s12 m6">
+          <h5 class="center">Match 5<br> </h5>
+          <h6 class="center">
+            <script>
+              document.write(team1)
+            </script> - Waiting
+          </h6>
+          <div class="section">
+            <div class="customBox">
+              <table class="striped highlight">
+                <thead>
+                  <tr>
+                    <th></th>
+                    <th>Host</th>
+                    <th>Joining</th>
+                  </tr>
+                </thead>
+
+                <tbody>
+                  <tr>
+                    <th>Team</th>
+                    <td>
+                      <script>
+                        document.write(team2)
+                      </script>
+                    </td>
+                    <td>
+                      <script>
+                        document.write(team3)
+                      </script>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Points</th>
+                    <td>
+                      <script>
+                        document.write(Match5_team2_points)
+                      </script>
+                      </p>
+                    </td>
+                    <td>
+                      <script>
+                        document.write(Match5_team3_points)
+                      </script>
+                      </p>
+                    </td>
+                  </tr>
+                  <tr>
+                    <th>Kills</th>
+                    <td>
+                      <script>
+                        document.write(Match5_team2_kills)
+                      </script>
+                      </p>
+                    </td>
+                    <td>
+                      <script>
+                        document.write(Match5_team3_kills)
                       </script>
                       </p>
                     </td>
@@ -650,6 +650,9 @@
             </div>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
 
 
         <!--  Scripts-->
